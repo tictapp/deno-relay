@@ -123,7 +123,7 @@ app.use(async (ctx: Context, next: () => Promise<unknown>) => {
   if (request.method === "GET") {
     const contentTypeHeader = sanitizedHeaders.get('Content-Type');
     if (contentTypeHeader?.includes('text/html')) {
-      sanitizedHeaders.set('Content-Type', 'text/plain');
+      //sanitizedHeaders.set('Content-Type', 'text/plain');
     }
   }
 
